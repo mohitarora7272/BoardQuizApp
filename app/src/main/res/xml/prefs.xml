@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Media Settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="Settings">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cbtimer"
+            android:summary="On/Off"
+            android:title="Timer On / Off" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cbsound"
+            android:summary="On/Off"
+            android:title="Sound On / Off" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cbvibrate"
+            android:summary="On/Off"
+            android:title="Vibrate On / Off" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

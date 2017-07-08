@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Board Quiz App</string>
+    <string name="title_activity_shopp_area">ShopArea</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="add_Id" tools:ignore="UnusedResources">"ca-app-pub-3104530433760081~4564635054"</string>
+    <string name="banner_home_footer">"ca-app-pub-3104530433760081/6041368251"</string>
+    <string name="interstitial_full_screen">"ca-app-pub-3104530433760081/7518101454"</string>
+
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_mode">Mode</string>
+    <string name="title_activity_statics">Statics</string>
+    <string name="welcome">WELCOME</string>
+    <string name="category">Category</string>
+    <string name="timer">Timer :</string>
+    <string name="timer2">Timer</string>
+    <string name="life">Life :</string>
+    <string name="question">Question</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="_50_50">50–50</string>
+    <string name="highscore">Highscore</string>
+    <string name="sr_no">Sr. No.</string>
+    <string name="name">Name</string>
+    <string name="score">Score</string>
+    <string name="rate_app">Rate App</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="rate">Rate</string>
+    <string name="summary">Summary</string>
+    <string name="continues">Continue</string>
+    <string name="your_score_is">Your Score is</string>
+    <string name="shopping">SHOPPING</string>
+    <string name="_50_for_a_month">$50 For a month</string>
+    <string name="_100_for_3_months">$100 For 3 months</string>
+    <string name="_150_for_a_year">$150 For a year</string>
+    <string name="statics">Statics</string>
+    <string name="right">Right</string>
+    <string name="wrong">Wrong</string>
+    <string name="total">Total</string>
+    <string name="skip">Skip</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="answer">Answer</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="buyLater">Buy Later</string>
+    <string name="buyNow">Buy Now</string>
+
+    <string name="freeAppTitle">Explanation</string>
+    <string name="freeAppMessage">Your are using this app with free. You can only use 10 question with this app.</string>
+
+    <string name="fiftyAppTitle">You don\'t have 50-50 lifeline</string>
+    <string name="skipAppTitle">You don\'t have skip lifeline</string>
+    <string name="timerAppTitle">You don\'t have timer lifeline</string>
+
+    <string name="fiftyAppMessage">Buy 50-50 lifeline from shopping page</string>
+    <string name="skipAppMessage">Buy skip lifeline from shopping page</string>
+    <string name="timerAppMessage">Buy timer lifeline from shopping page</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="never">Never</string>
+    <string name="later">Later</string>
+    <string name="exit_quiz_message">Do you want to leave this Test?</string>
+    <string name="explanation">Explanation</string>
+    <string name="highscore_found">Highscore Not Found</string>
+    <string name="comingsoon">Coming Soon…</string>
+    <string name="setting">Settings</string>
+    <string name="feedBackMsg">Board Quiz App Feedback</string>
+</resources>

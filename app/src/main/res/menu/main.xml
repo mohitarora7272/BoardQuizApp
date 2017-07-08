@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.board.quiz.MainActivity"
+    tools:ignore="UnusedResources">
+
+    <item
+        android:id="@+id/Setting"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/setting"
+        tools:ignore="AppCompatResource" />
+
+</menu>

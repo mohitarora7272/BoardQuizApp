@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconDipSize">
+        <ignore path="src/main/res/drawable-hdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-hdpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-ldpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-ldpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-mdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-mdpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-xhdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-xhdpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/settingicon.png" />
+    </issue>
+    <issue id="IconDuplicatesConfig">
+        <ignore path="src/main/res/drawable-hdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-hdpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-ldpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-mdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-mdpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-xhdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-xhdpi/settingicon.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/orange_button.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/settingicon.png" />
+    </issue>
+    <issue id="UnusedResources">
+        <ignore path="src/main/res/drawable-hdpi/blue_btn.png" />
+        <ignore path="src/main/res/drawable-hdpi/green_btn.png" />
+        <ignore path="src/main/res/drawable-hdpi/share_btn.png" />
+        <ignore path="src/main/res/drawable-hdpi/sound.png" />
+        <ignore path="src/main/res/drawable-hdpi/speaker_mute_32x32.png" />
+        <ignore path="src/main/res/drawable-hdpi/timer_bg.png" />
+        <ignore path="src/main/res/drawable-hdpi/yellow_button.png" />
+        <ignore path="src/main/res/mipmap-hdpi/ic_launcher.png" />
+        <ignore path="src/main/res/mipmap-mdpi/ic_launcher.png" />
+        <ignore path="src/main/res/mipmap-xhdpi/ic_launcher.png" />
+        <ignore path="src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+        <ignore path="src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+    </issue>
+</lint>

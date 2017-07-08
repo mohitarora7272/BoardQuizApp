@@ -1,0 +1,9 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="UnusedResources">
+    <stroke android:width="3dp" android:color="@color/md_white_1000" />
+    <solid android:color="@android:color/transparent" />
+    <padding android:left="7dp" android:top="7dp"
+        android:right="7dp" android:bottom="0dp" />
+    <corners android:radius="4dp" />
+</shape>

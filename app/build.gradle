@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "com.board.quiz"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def project = "BoardQuizApp"
+                    //noinspection GroovyUnusedAssignment
+                    def SEP = "_"
+                    //noinspection GroovyUnusedAssignment
+                    def SEP_START = "("
+                    //noinspection GroovyUnusedAssignment
+                    def SEP_CLOSE = ")"
+                    //noinspection GroovyUnusedAssignment
+                    def buildType = variant.variantData.variantConfiguration.buildType.name
+                    //noinspection GroovyUnusedAssignment
+                    def version = variant.versionName
+                    def date = new Date();
+                    //noinspection GroovyUnusedAssignment
+                    def formattedDate = date.format('dd-MMM-yyyy')
+
+                    def newApkName = project + ".apk"
+
+                    output.outputFile = new File(output.outputFile.parent, newApkName)
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.4@aar'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.android.gms:play-services-ads:11.0.2'
+    compile 'com.yarolegovich:lovely-dialog:1.0.4'
+}
