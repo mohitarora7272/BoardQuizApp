@@ -14,7 +14,7 @@ public class SplashScreen extends AppCompatActivity implements Constant {
 
     private SettingPreference pref;
     private boolean mIsBackButtonPressed;
-    private static final int SPLASH_DURATION = 3000; // 3 seconds
+    private static final int SPLASH_DURATION = 3000; // 3 Seconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
