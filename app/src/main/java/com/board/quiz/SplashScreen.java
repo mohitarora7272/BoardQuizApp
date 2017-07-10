@@ -2,10 +2,12 @@ package com.board.quiz;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -23,6 +25,14 @@ public class SplashScreen extends AppCompatActivity implements Constant {
 
         pref = new SettingPreference(this);
         RuntimePermission runtimePermission = new RuntimePermission(this);
+        Typeface pacifico = Typeface.createFromAsset(getAssets(), "pacifico.ttf");
+        AnimationUtil animationUtil = new AnimationUtil(this);
+        TextView textView = (TextView) findViewById(R.id.imageView1);
+        textView.setTypeface(pacifico);
+        animationUtil.slideInLeft(textView);
+        TextView textView2 = (TextView) findViewById(R.id.imageView2);
+        textView2.setTypeface(pacifico);
+        animationUtil.slideInRight(textView2);
 
         final DataBaseHelper dbHelper = new DataBaseHelper(this);
 

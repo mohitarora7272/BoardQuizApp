@@ -40,7 +40,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_NAME = "payment_master";
 
     public DataBaseHelper(Context context) {
-        super(context, DB_NAME, null, 3);// 1? its Database Version
+        super(context, DB_NAME, null, 1);// 1? its Database Version
         DB_PATH = "/data/data/" + context.getPackageName() + "/databases/";
         this.mContext = context;
     }

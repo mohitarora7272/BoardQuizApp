@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="@drawable/orange_button"
+            android:background="@drawable/custom_button"
             android:padding="8dp"
             android:text="@string/_50_for_a_month"
             android:textSize="15sp" />
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="@drawable/orange_button"
+            android:background="@drawable/custom_button"
             android:padding="8dp"
             android:text="@string/_100_for_3_months"
             android:textSize="15sp" />
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="@drawable/orange_button"
+            android:background="@drawable/custom_button"
             android:padding="8dp"
             android:text="@string/_150_for_a_year"
             android:textSize="15sp" />

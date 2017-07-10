@@ -9,14 +9,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/score_bg</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
-        <item name="android:windowBackground">@drawable/score_bg</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/md_white_1000</item>
     </style>
     <!-- Animations -->
     <style name="MyAnimation" tools:ignore="UnusedResources" />
@@ -27,20 +27,10 @@
         <item name="android:windowExitAnimation">@anim/slide_out_left</item>
     </style>
 
-    <style name="AppBaseThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <style name="PreferencesTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowFullscreen">false</item>
-        <item name="android:windowBackground">@drawable/score_bg</item>
-    </style>
-
-    <style name="PreferencesTheme">
         <item name="android:windowBackground">@drawable/score_bg</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -48,5 +38,21 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+        <item name="android:textColor">@color/md_black_1000</item>
     </style>
+
+    <style name="AppBaseThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/score_bg</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+    </style>
+
 </resources>

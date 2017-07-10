@@ -37,6 +37,7 @@
         <activity
             android:name="com.board.quiz.MainActivity"
             android:label="@string/app_name"
+            android:theme="@style/AppBaseThemeSplash"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.board.quiz.Category"
