@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,9 @@ public class SplashScreen extends AppCompatActivity implements Constant {
         TextView textView2 = (TextView) findViewById(R.id.imageView2);
         textView2.setTypeface(pacifico);
         animationUtil.slideInRight(textView2);
+
+        ImageView imageView3 = (ImageView) findViewById(R.id.imageView3);
+        animationUtil.slideInUp(imageView3);
 
         final DataBaseHelper dbHelper = new DataBaseHelper(this);
 

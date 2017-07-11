@@ -12,6 +12,7 @@
         android:layout_marginRight="55dp"
         android:gravity="center"
         android:text="@string/splash_name"
+        android:visibility="gone"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"
         android:textStyle="bold|italic" />
@@ -25,6 +26,13 @@
         android:text="@string/splash1_name"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"
+        android:visibility="gone"
         android:textStyle="bold|italic" />
-
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash_icon"
+        android:contentDescription="@string/app_name"
+        android:gravity="center" />
 </LinearLayout> 

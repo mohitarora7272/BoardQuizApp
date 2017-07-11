@@ -14,7 +14,8 @@
         android:text="@string/splash_name"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/imageView2"
@@ -25,6 +26,15 @@
         android:text="@string/splash1_name"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash_icon"
+        android:contentDescription="@string/app_name"
+        android:gravity="center" />
 
 </LinearLayout> 
