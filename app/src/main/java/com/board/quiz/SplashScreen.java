@@ -34,7 +34,6 @@ public class SplashScreen extends AppCompatActivity implements Constant {
         TextView textView2 = (TextView) findViewById(R.id.imageView2);
         textView2.setTypeface(pacifico);
         animationUtil.slideInRight(textView2);
-
         ImageView imageView3 = (ImageView) findViewById(R.id.imageView3);
         animationUtil.slideInUp(imageView3);
 
