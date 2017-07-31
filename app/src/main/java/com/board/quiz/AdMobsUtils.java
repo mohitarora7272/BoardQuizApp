@@ -23,7 +23,7 @@ public class AdMobsUtils {
     // Show Banner Ads
     public void showBannerAd(AdView mAdView) {
         this.mAdView = mAdView;
-        mAdView.loadAd(getTestAdRequest());
+        mAdView.loadAd(getAdRequest());
         mAdView.setAdListener(new AdListener() {
             public void onAdLoaded() {
                 Log.e("Banner", "onAdLoaded");
@@ -116,7 +116,7 @@ public class AdMobsUtils {
     private void loadInterstitialAds() {
         // Request a new ad if one isn't already loaded, hide the button, and kick off the timer.
         if (!mInterstitialAd.isLoading() && !mInterstitialAd.isLoaded()) {
-            mInterstitialAd.loadAd(getTestAdRequest());
+            mInterstitialAd.loadAd(getAdRequest());
         }
     }
 
