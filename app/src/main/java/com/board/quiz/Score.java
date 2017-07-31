@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdView;
+
 import java.util.HashMap;
 
 @SuppressWarnings("ALL")
@@ -30,12 +32,13 @@ public class Score extends AppCompatActivity {
     private DbHighestScore db;
     private Typeface bold;
     final private static int DIALOG_LOGIN = 1;
+    private AdMobsUtils adMobsUtils;
 
     @SuppressWarnings("deprecation")
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
-
+        adMobsUtils = new AdMobsUtils(this);
         AnimationUtil animationUtil = new AnimationUtil(this);
 
         Typeface normal = Typeface.createFromAsset(getAssets(), "normal.ttf");
@@ -49,7 +52,7 @@ public class Score extends AppCompatActivity {
         db = new DbHighestScore(this);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-
+        AdView mAdView = (AdView) findViewById(R.id.adView);
         TextView txtheader = (TextView) findViewById(R.id.textView);
         TextView txtscoreheader = (TextView) findViewById(R.id.txtscoreheader);
 
@@ -121,6 +124,7 @@ public class Score extends AppCompatActivity {
                 startActivity(it);
             }
         });
+        adMobsUtils.showBannerAd(mAdView);
     }
 
     @Override

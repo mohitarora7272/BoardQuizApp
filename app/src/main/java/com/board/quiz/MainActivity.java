@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //adMobsUtils.showBannerAd(mAdView);
+        adMobsUtils.showBannerAd(mAdView);
     }
 
     @Override
@@ -154,12 +154,10 @@ public class MainActivity extends AppCompatActivity {
         if (rateCounter == DataManager.ratecounter) {
             rateAlert();
 
+        } else if (rateCounter == DataManager.mistake) {
+            adMobsUtils.showInterstitial();
+
         } else {
-
-            if (rateCounter == DataManager.adRateCounter) {
-                //adMobsUtils.showInterstitial();
-            }
-
             Intent i = new Intent(this, Category.class);
             startActivity(i);
         }

@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
@@ -7,6 +8,7 @@
     tools:context=".HighestScore">
 
     <RelativeLayout
+        android:id="@+id/realteHigh"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/colorAccent">
@@ -35,10 +37,10 @@
 
     <TextView
         android:id="@+id/textViewHS"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_centerInParent="true"
         android:text="@string/highscore_found"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/black"
@@ -48,12 +50,19 @@
         android:id="@+id/lvscore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/header"
         android:divider="@drawable/seperator"
         android:dividerHeight="1dp"
-        android:layoutAnimation="@anim/list_anim" />
+        android:layoutAnimation="@anim/list_anim"
+        tools:ignore="UnknownIdInLayout" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/seperator" />
-</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer" />
+
+</RelativeLayout>

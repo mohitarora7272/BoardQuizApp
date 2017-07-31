@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 @SuppressWarnings("ALL")
@@ -19,18 +21,19 @@ public class ResultActivity extends AppCompatActivity {
     private int wrongans;
     private int totalquestions;
     private int totattempt;
+    private AdMobsUtils adMobsUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-
+        adMobsUtils = new AdMobsUtils(this);
         AnimationUtil animationUtil = new AnimationUtil(this);
 
         //getSharedPreferenceValues();
         Typeface normal = Typeface.createFromAsset(getAssets(), "normal.ttf");
         Typeface bold = Typeface.createFromAsset(getAssets(), "bold.ttf");
-
+        AdView mAdView = (AdView) findViewById(R.id.adView);
         TextView title = (TextView) findViewById(R.id.txtresult);
         ListView lvresult = (ListView) findViewById(R.id.lvresult);
         Button btncontinue = (Button) findViewById(R.id.btncontine);
@@ -65,6 +68,7 @@ public class ResultActivity extends AppCompatActivity {
                 startActivity(iScore);
             }
         });
+        adMobsUtils.showBannerAd(mAdView);
     }
 
     private void getSharedPreferenceValues() {

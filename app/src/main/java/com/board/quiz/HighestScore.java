@@ -14,6 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,15 +29,16 @@ public class HighestScore extends AppCompatActivity {
     private ArrayList<String> idlist = new ArrayList<>();
     private ArrayList<String> namelist = new ArrayList<>();
     private ArrayList<String> scorelist = new ArrayList<>();
+    private AdMobsUtils adMobsUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_highest_score);
-
+        adMobsUtils = new AdMobsUtils(this);
         highscore = (TextView) findViewById(R.id.textViewHS);
         header = (LinearLayout) findViewById(R.id.header);
-
+        AdView mAdView = (AdView) findViewById(R.id.adView);
         Button btnback = (Button) findViewById(R.id.btnback);
         lvscore = (ListView) findViewById(R.id.lvscore);
         db = new DbHighestScore(this);
@@ -51,6 +54,7 @@ public class HighestScore extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        adMobsUtils.showBannerAd(mAdView);
     }
 
     public void getListItem() {

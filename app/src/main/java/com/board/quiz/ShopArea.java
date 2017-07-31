@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.google.android.gms.ads.AdView;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 @SuppressWarnings("ALL")
@@ -17,13 +18,14 @@ public class ShopArea extends AppCompatActivity {
     private static final String PRODUCT_TIMER = "timer";
 
     private String productselected;
+    private AdMobsUtils adMobsUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_shopp_area);
-
+        adMobsUtils = new AdMobsUtils(this);
         AnimationUtil animationUtil = new AnimationUtil(this);
 
         SettingPreference pref = new SettingPreference(this);
@@ -39,6 +41,7 @@ public class ShopArea extends AppCompatActivity {
 
         Button btnTimer = (Button) findViewById(R.id.btntimer);
         animationUtil.slideInUp(btnTimer);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
 
         btnfiftyfifty.setOnClickListener(new OnClickListener() {
 
@@ -76,6 +79,8 @@ public class ShopArea extends AppCompatActivity {
                 finish();
             }
         });
+
+        adMobsUtils.showBannerAd(mAdView);
     }
 
     private void comingSoonDialog() {

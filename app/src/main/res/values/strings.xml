@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <string name="app_name">Board Quiz App</string>
     <string name="splash_name">Board</string>
     <string name="splash1_name">Quiz</string>
     <string name="title_activity_shopp_area">ShopArea</string>
 
-    <!-- AdMob ad unit IDs -->
-    <string name="add_Id" tools:ignore="UnusedResources">"ca-app-pub-3104530433760081~4564635054"</string>
-    <string name="banner_home_footer">"ca-app-pub-3104530433760081/6041368251"</string>
-    <string name="interstitial_full_screen">"ca-app-pub-3104530433760081/7518101454"</string>
+    <!-- iamdeveloper7272 email AdMob ad unit IDs -->
+    <string name="banner_home_footer">"ca-app-pub-7493083145656430/7649139327"</string>
+    <string name="interstitial_full_screen">"ca-app-pub-7493083145656430/6671756118"</string>
+
+    <!-- aroraneha8650 email AdMob ad unit IDs -->
+    <!--<string name="banner_home_footer">"ca-app-pub-3104530433760081/6041368251"</string>-->
+    <!--<string name="interstitial_full_screen">"ca-app-pub-3104530433760081/7518101454"</string>-->
 
     <string name="title_activity_result">ResultActivity</string>
     <string name="title_activity_mode">Mode</string>

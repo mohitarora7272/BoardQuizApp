@@ -1,10 +1,12 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/realteUp"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/colorAccent">
@@ -32,9 +34,19 @@
         android:id="@+id/lvclassic_cat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/realteUp"
         android:layout_marginTop="5dp"
-        android:layoutAnimation = "@anim/list_anim"
         android:divider="@android:color/transparent"
-        android:dividerHeight="50dp" />
+        android:dividerHeight="50dp"
+        android:layoutAnimation="@anim/list_anim" />
 
-</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer" />
+
+</RelativeLayout>

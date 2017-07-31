@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,13 +32,15 @@ public class Category extends AppCompatActivity {
 
     private Typeface bold;
 
+    private AdMobsUtils adMobsUtils;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-
+        adMobsUtils = new AdMobsUtils(this);
         db = new DataBaseHelper(getApplicationContext());
-
+        AdView mAdView = (AdView) findViewById(R.id.adView);
         Typeface normal = Typeface.createFromAsset(getAssets(), "normal.ttf");
         bold = Typeface.createFromAsset(getAssets(), "bold.ttf");
 
@@ -70,6 +74,7 @@ public class Category extends AppCompatActivity {
 
         setModeInPref();
         displayData();
+        adMobsUtils.showBannerAd(mAdView);
     }
 
     private void setModeInPref() {

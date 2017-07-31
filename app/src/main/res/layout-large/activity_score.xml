@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -60,8 +61,7 @@
                 android:background="@drawable/home_btn"
                 android:gravity="center"
                 android:padding="10dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                 />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <Button
                 android:id="@+id/btnHighestscore"
@@ -70,8 +70,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/scoreboard_btn"
                 android:padding="10dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                 />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <Button
                 android:id="@+id/btnShare"
@@ -80,8 +79,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/share_btn_2"
                 android:padding="10dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                 />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <Button
                 android:id="@+id/btnstatics"
@@ -90,9 +88,15 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/stastics"
                 android:padding="10dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                 />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer" />
+</RelativeLayout>

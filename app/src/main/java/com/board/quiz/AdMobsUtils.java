@@ -17,7 +17,7 @@ public class AdMobsUtils {
 
     public AdMobsUtils(Context ctx) {
         this.ctx = ctx;
-        //initInterstitialAd();
+        initInterstitialAd();
     }
 
     // Show Banner Ads
